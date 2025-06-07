@@ -15,7 +15,7 @@ const OurUsers = ({reviewsRef}: OurUsersProps) => {
                     <h2 className={styles.titleUser}>Что говорят наши пользователи</h2>
                     <div className={styles.ourUsersFlex}>
                         <div className={styles.ourUsersStats}>
-                            <img width={386} height={260} src="/public/images/user-1.webp" alt="users" />
+                            <img width={386} height={260} src="/images/user-1.webp" alt="users" />
                             <div className={styles.ourUsersInfo}>
                                 <div className={styles.ourUsersCnt}>
                                     <div className={styles.ourUsersName}>

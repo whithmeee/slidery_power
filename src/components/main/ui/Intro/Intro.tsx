@@ -21,23 +21,23 @@ const Intro = () => {
                 </form>
             </div>
             <div className={styles.generatingPhoto}>
-                <img width={500} height={500} sizes="100vw" src="/public/images/hero-generating.png"
+                <img width={500} height={500} sizes="100vw" src="/images/hero-generating.png"
                        className={styles.generatingDesc}
                        alt="generating" />
                 <img width={500}
-                       height={500} sizes="100vw" src="/public/images/generating-mob.webp"
+                       height={500} sizes="100vw" src="/images/generating-mob.webp"
                        className={styles.generatingMobile} alt="generating" />
             </div>
             <div className={styles.generatingCnt}>
                 <div className={styles.generatingPicture}>
                     <img width={32}
-                           height={32} src="/public/images/face-1.png" alt="users" />
+                           height={32} src="/images/face-1.png" alt="users" />
                     <img width={32}
-                           height={32} src="/public/images/face-2.png" alt="users" />
+                           height={32} src="/images/face-2.png" alt="users" />
                     <img width={32}
-                           height={32} src="/public/images/face-3.png" alt="users" />
+                           height={32} src="/images/face-3.png" alt="users" />
                     <img width={32}
-                           height={32} src="/public/images/face-4.png" alt="users" />
+                           height={32} src="/images/face-4.png" alt="users" />
                 </div>
                 <p>Нам доверяют тысячи пользователей - присоединяйтесь!</p>
             </div>

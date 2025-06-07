@@ -21,7 +21,7 @@ const Header = () => {
         <div className={styles.menu}>
             <div className={styles.logo}>
                 <Link to="/">
-                    <img width={124} height={40} loading="eager" src="../../../public/images/Logo.svg" alt="Logo" />
+                    <img width={124} height={40} loading="eager" src="/images/Logo.svg" alt="Logo" />
                 </Link>
             </div>
             <ul className={styles.menuScroll}>

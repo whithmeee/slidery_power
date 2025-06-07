@@ -4,51 +4,51 @@ import styles from './ShareBrowsers.module.scss';
 const shareItem = [
     {
         name: "google",
-        img: "/public/images/google.svg"
+        img: "/images/google.svg"
     },
     {
         name: "firefox",
-        img: "/public/images/firefox.svg"
+        img: "/images/firefox.svg"
     },
     {
         name: "opera",
-        img: "/public/images/opera.svg"
+        img: "/images/opera.svg"
     },
     {
         name: "safari",
-        img: "/public/images/safari.svg"
+        img: "/images/safari.svg"
     },
     {
         name: "microsoft",
-        img: "/public/images/microsoft.svg"
+        img: "/images/microsoft.svg"
     },
     {
         name: "keynote",
-        img: "/public/images/keynote.svg"
+        img: "/images/keynote.svg"
     },
     {
         name: "apache",
-        img: "/public/images/apache.svg"
+        img: "/images/apache.svg"
     },
     {
         name: "vk",
-        img: "/public/images/vk.svg"
+        img: "/images/vk.svg"
     },
     {
         name: "whatsApp",
-        img: "/public/images/whatsApp.svg"
+        img: "/images/whatsApp.svg"
     },
     {
         name: "yandex",
-        img: "/public/images/yandex.svg"
+        img: "/images/yandex.svg"
     },
     {
         name: "telegram",
-        img: "/public/images/telegram.svg"
+        img: "/images/telegram.svg"
     },
     {
         name: "svgrepo",
-        img: "/public/images/svgrepo-com.svg"
+        img: "/images/svgrepo-com.svg"
     }
 ];
 

@@ -12,17 +12,17 @@ const workBox = [
     {
         title: "Ввод данных",
         text: "Укажите тему вашей презентации, загрузите текст или основные тезисы",
-        img: "/public/images/iustration-1.webp"
+        img: "/images/iustration-1.webp"
     },
     {
         title: "Магия ИИ",
         text: "Наблюдайте, как Slidery AI создает стильные и понятные слайды",
-        img: "/public/images/iustration-2.webp"
+        img: "/images/iustration-2.webp"
     },
     {
         title: "Готовая презентация",
         text: "Скачайте презентацию в формате: PowerPoint",
-        img: "/public/images/iustration-3.svg"
+        img: "/images/iustration-3.svg"
     }
 ];
 
@@ -49,10 +49,10 @@ const SimpleWork = ({howWorkRef}:SimpleWorkProps) => {
                     )}
                     <div className={styles.unlockSettings}>
                         <div className={styles.unlockSettingsPhoto}>
-                            <img width={1190} height={390} src="/public/images/animation.png" alt="animation" />
+                            <img width={1190} height={390} src="/images/animation.png" alt="animation" />
                         </div>
                         <div className={styles.unlockSettingsMod}>
-                            <img width={64} height={64} src="/public/images/lock.gif" alt="lock" />
+                            <img width={64} height={64} src="/images/lock.gif" alt="lock" />
                             <h3>Разблокируйте новые настройки</h3>
                             <p>
                                 Выбирайте тему оформления, цвета, шрифты и стиль дизайна

@@ -17,7 +17,7 @@ const Footer = () => {
         <div className={styles.footerMain}>
             <div>
                 <div className={styles.footerLogo}>
-                    <img src="../../../public/images/logo-slidery.png" alt="slidery" />
+                    <img src="/images/logo-slidery.png" alt="slidery" />
                 </div>
                 <div className={styles.footerCnt}>
                     <div className={styles.footerRel}>

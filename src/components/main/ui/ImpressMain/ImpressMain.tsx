@@ -6,25 +6,25 @@ const impressBox = [
     {
         title: "Начните с идеи",
         text: "Добавьте текст, изображения или видео – нейросеть превратит их в стильные слайды",
-        img: "/public/images/card.webp",
+        img: "/images/card.webp",
         buttonText: ""
     },
     {
         title: "Smart design",
         text: "Умные алгоритмы автоматически подбирают стиль, компоновку и цвета, чтобы всё выглядело профессионально",
-        img: "/public/images/card-2.webp",
+        img: "/images/card-2.webp",
         buttonText: ""
     },
     {
         title: "Переходы и анимации",
         text: "Движение привлекает внимание – добавьте плавные анимации, сделав презентацию динамичнее",
-        img: "/public/images/card-3.webp",
+        img: "/images/card-3.webp",
         buttonText: ""
     },
     {
         title: "Создавайте бесплатно!",
         text: "Попробуйте прямо сейчас! Загрузите текст, и сервис подготовит для вас первую презентацию",
-        img: "/public/images/card-4.webp",
+        img: "/images/card-4.webp",
         buttonText: "Начать бесплатно"
     }
 ];

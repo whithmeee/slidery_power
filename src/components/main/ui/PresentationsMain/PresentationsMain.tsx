@@ -16,7 +16,7 @@ const PresentationsMain = ({possibilitiesRef}: PresentationsMainProps) => {
                 </div>
 
                 <div className={styles.presentationsCnt}>
-                    <img src="/public/images/presentations.png" className={styles.presentationsDesc}
+                    <img src="/images/presentations.png" className={styles.presentationsDesc}
                          alt="presentations" />
                 </div>
 

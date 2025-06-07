@@ -12,7 +12,7 @@ const Editor = () => {
 
               <div className={styles.editorContent}>
                   <div className={styles.mackBook}>
-                      <img src="/public/images/mackbook.png" alt="mackbook"/>
+                      <img src="/images/mackbook.png" alt="mackbook"/>
                   </div>
                   <div className={styles.editorBlur}>
                       <div className={styles.editorBlock}>
@@ -22,10 +22,10 @@ const Editor = () => {
                           </div>
 
                           <div className={styles.editorImages}>
-                              <img className={styles.editorCard} src="/public/images/Card.png" alt="card"/>
-                              <img className={styles.editorContainer} src="/public/images/Container.svg" alt="container"/>
-                              <img className={styles.editorHaram} src="/public/images/Haram.svg" alt="templates"/>
-                              <img className={styles.templates} src="/public/images/Harameters.svg" alt="templates"/>
+                              <img className={styles.editorCard} src="/images/Card.png" alt="card"/>
+                              <img className={styles.editorContainer} src="/images/Container.svg" alt="container"/>
+                              <img className={styles.editorHaram} src="/images/Haram.svg" alt="templates"/>
+                              <img className={styles.templates} src="/images/Harameters.svg" alt="templates"/>
                           </div>
                       </div>
                       <div className={styles.editorTemplatesText}>
@@ -36,10 +36,10 @@ const Editor = () => {
 
 
                           <div className={styles.templateImages}>
-                              <img className={styles.themeText} src="/public/images/themeText.png" alt="theme"/>
-                              <img className={styles.iconText} src="/public/images/iconText.svg" alt="iconText"/>
-                              <img className={styles.fontsIcon} src="/public/images/fonts.svg" alt="fontsIcon"/>
-                              <img className={styles.downloadFont} src="/public/images/downlodText.svg" alt="downloadFont"/>
+                              <img className={styles.themeText} src="/images/themeText.png" alt="theme"/>
+                              <img className={styles.iconText} src="/images/iconText.svg" alt="iconText"/>
+                              <img className={styles.fontsIcon} src="/images/fonts.svg" alt="fontsIcon"/>
+                              <img className={styles.downloadFont} src="/images/downlodText.svg" alt="downloadFont"/>
                           </div>
                       </div>
                       <div className={styles.elements}>
@@ -50,10 +50,10 @@ const Editor = () => {
 
 
                               <div className={styles.elementsImages}>
-                                  <img className={styles.elementsIcon} src="/public/images/elementsIcon.svg" alt="elements"/>
-                                  <img className={styles.elementsStar} src="/public/images/starElement.svg" alt="star"/>
-                                  <img className={styles.elementsLibrary} src="/public/images/library.svg" alt="library"/>
-                                  <img className={styles.elementsSvg} src="/public/images/elements.svg" alt="elements"/>
+                                  <img className={styles.elementsIcon} src="/images/elementsIcon.svg" alt="elements"/>
+                                  <img className={styles.elementsStar} src="/images/starElement.svg" alt="star"/>
+                                  <img className={styles.elementsLibrary} src="/images/library.svg" alt="library"/>
+                                  <img className={styles.elementsSvg} src="/images/elements.svg" alt="elements"/>
                               </div>
                           </div>
                       <div className={styles.pencil}>
@@ -62,12 +62,12 @@ const Editor = () => {
                                   <p>В редакторе есть возможность создавать элементы вручную — берите перо и творите</p>
                               </div>
                               <div className={styles.pencilIamges}>
-                                  <img className={styles.edit} src="/public/images/edit.svg" alt="edit"/>
-                                  <img className={styles.instruments} src="/public/images/instrument.svg" alt="instrument"/>
-                                  <img className={styles.scissors} src="/public/images/scissors.svg" alt="scissors"/>
-                                  <img className={styles.eraser} src="/public/images/eraser.svg" alt="eraser"/>
-                                  <img className={styles.pencilIcon} src="/public/images/pencilIcon.svg" alt="pencilIcon"/>
-                                  <img className={styles.pencilLine} src="/public/images/line.svg" alt="line"/>
+                                  <img className={styles.edit} src="/images/edit.svg" alt="edit"/>
+                                  <img className={styles.instruments} src="/images/instrument.svg" alt="instrument"/>
+                                  <img className={styles.scissors} src="/images/scissors.svg" alt="scissors"/>
+                                  <img className={styles.eraser} src="/images/eraser.svg" alt="eraser"/>
+                                  <img className={styles.pencilIcon} src="/images/pencilIcon.svg" alt="pencilIcon"/>
+                                  <img className={styles.pencilLine} src="/images/line.svg" alt="line"/>
                               </div>
                           </div>
 
