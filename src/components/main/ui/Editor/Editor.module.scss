@@ -1,0 +1,660 @@
+@use '../../../../styles/variables' as vars;
+@use '../../../../styles/mixin' as mix;
+@use '../../../../styles/media';
+
+.editor {
+  margin-bottom: 160px;
+  position: relative;
+
+  @include media.xs {
+    padding-top: 0;
+    margin-top: -200px;
+    padding-bottom: 60px;
+  }
+
+
+  .editorTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+
+
+    h2 {
+      @include mix.heading-2;
+      @include media.xs {
+        max-width: 300px;
+        font-size: 24px;
+        line-height: 24px;
+        margin: 0 auto;
+      }
+    }
+
+    p {
+      @include mix.paragraph;
+      text-align: center;
+
+      @include media.xs {
+        max-width: 244px;
+        font-size: 16px;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .editorContent {
+    margin-top: 120px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 690px;
+    background: url("/public/images/Rectangle 39331.png") no-repeat center;
+    position: relative;
+    z-index: 1;
+
+
+    @include media.lg {
+      background: none;
+      height: 100%;
+      margin-top: 20px;
+    }
+
+    @include media.xs {
+      width: 100%;
+      height: auto;
+      margin-top: 40px;
+      background: none;
+    }
+
+    .editorBlur {
+      background: url("/public/images/Blur.png");
+      background-position-x: center;
+      background-size: cover;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 30px;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+
+
+      @include media.lg {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-left: 0;
+        background: none;
+        gap: 10px;
+      }
+      }
+
+      .editorBlock {
+        padding: 24px;
+        width: 513px;
+        display: flex;
+        justify-content: space-between;
+        height: 207px;
+        gap: 36px;
+        background: linear-gradient(105.97deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%);
+        border: 1px solid #646464;
+        filter: blur(30);
+        border-radius: 16px;
+        position: relative;
+        backdrop-filter: blur(30px);
+
+        @include media.lg {
+          width: 100%;
+        }
+
+        @include media.xs {
+          top: 0;
+          left: 0;
+          height: 310px;
+        }
+        .editorText {
+          display: flex;
+          flex-direction: column;
+          gap: 67px;
+
+          @include media.xs {
+            gap: 10px;
+            text-align: center;
+          }
+
+          h4 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 120%;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #FAFDFF;
+
+            @include media.xs {
+              text-align: center;
+              font-size: 18px;
+            }
+          }
+
+
+          p {
+            width: 244px;
+            height: 66px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #FAFDFF;
+            opacity: 0.6;
+            @include media.xs {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+
+        .editorImages {
+           width: 100%;
+          display: block;
+          .editorCard {
+            position: absolute;
+            top: 72px;
+            bottom: 19px;
+            right: 21px;
+
+            @include media.xs{
+              right: 21px;
+              left: 25px;
+              top: revert;
+            }
+          }
+
+          .editorContainer {
+            position: absolute;
+            top: 15px;
+            right: 115px;
+            bottom: 113px;
+
+            @include media.xs {
+              top: revert;
+              width: 64px;
+              height: 64px;
+              right: 141px;
+              bottom: 97px;
+            }
+          }
+
+          .editorHaram {
+            position: absolute;
+            top:57px;
+            right: 31px;
+            bottom: 120px;
+
+            @include media.xs {
+              top: revert;
+              right: 67px;
+              bottom: 88px;
+            }
+          }
+          .templates {
+            position: absolute;
+            top:25px;
+            right: 26px;
+            bottom: 144px;
+
+            @include media.xs {
+              top: revert;
+              right: 44px;
+              bottom: 107px;
+            }
+          }
+        }
+      }
+      .editorTemplatesText {
+        padding: 24px;
+        width: 513px;
+        height: 207px;
+        background: linear-gradient(105.97deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%);
+        border: 1px solid #646464;
+        border-radius: 16px;
+        position: relative;
+        backdrop-filter: blur(30px);
+
+        @include media.lg {
+          width: 100%;
+        }
+
+        @include media.xs {
+          height: 310px;
+        }
+
+        .editorTextTemplate {
+          display: flex;
+          flex-direction: column;
+          gap: 67px;
+
+          @include media.xs {
+            gap: 10px;
+            text-align: center;
+          }
+
+          h4 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 120%;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #FAFDFF;
+
+            @include media.xs {
+              font-size: 18px;
+            }
+          }
+          p {
+            width: 265px;
+            height: 65px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #FAFDFF;
+            opacity: 0.6;
+
+            @include media.xs {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .templateImages {
+          .themeText {
+            width: 198px;
+            height: 146px;
+            border: 8px;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            bottom: 45px;
+            @include media.xs {
+              top: 132px;
+              left: 24px;
+              right: 109px;
+              width: 215px;
+              height: 158px;
+            }
+          }
+
+          .iconText {
+            position: absolute;
+            top: 112px;
+            right: 134px;
+            bottom: 16px;
+
+
+            @include media.xs {
+              right: 28px;
+              top: 181px;
+              width: 64px;
+              height: 64px;
+              transform: rotate(34deg);
+            }
+          }
+
+          .fontsIcon {
+            position: absolute;
+            top: 125px;
+            right: 35px;
+            bottom: 43px;
+
+            @include media.xs {
+              top: 215px;
+              right: 50px;
+            }
+          }
+
+          .downloadFont {
+            position: absolute;
+            top: 150px;
+            right: 15px;
+            bottom: 14px;
+
+            @include media.xs {
+              top: 244px;
+              right: 0;
+            }
+          }
+        }
+      }
+        .elements {
+          position: relative;
+          padding: 24px;
+          width: 50%;
+          height: 207px;
+          background: linear-gradient(105.97deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%);
+          border: 1px solid #646464;
+          border-radius: 16px;
+          backdrop-filter: blur(30px);
+          z-index: 2;
+
+
+          @include media.lg {
+            width: 100%;
+          }
+
+          @include media.xs{
+            height: 310px;
+          }
+
+
+          .elementsText {
+              display: flex;
+              flex-direction: column;
+              gap: 67px;
+
+            @include media.xs {
+              gap: 10px;
+              text-align: center;
+            }
+
+              h4 {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 120%;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #FAFDFF;
+
+                @include media.xs {
+                  font-size: 18px;
+                }
+              }
+
+              p {
+                width: 239px;
+                height: 66px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                font-feature-settings: 'pnum' on, 'lnum' on;
+                color: #FAFDFF;
+                opacity: 0.6;
+
+                @include media.xs {
+                  font-size: 14px;
+                }
+              }
+          }
+
+          .elementsImages {
+            .elementsIcon {
+              position: absolute;
+              top: 30px;
+              right: 26px;
+
+
+              @include media.xs {
+                left: 20px;
+                bottom: -6px;
+                top: revert;
+              }
+            }
+
+            .elementsStar {
+              position: absolute;
+              top: 8px;
+              right: 110px;
+              bottom: 120px;
+
+              @include media.xs {
+                top: 224px;
+                right: 17px;
+              }
+            }
+
+            .elementsLibrary {
+              position: absolute;
+              top: 20px;
+              bottom: 137px;
+              right: 0;
+
+              @include media.xs {
+                top: 113px;
+                right: 17px;
+              }
+            }
+
+            .elementsSvg {
+              position: absolute;
+              right: 0;
+              top: 55px;
+              bottom: 110px;
+
+              @include media.xs {
+                right: 15px;
+                top: 151px;
+              }
+            }
+          }
+        }
+        .pencil {
+          position: relative;
+          padding: 24px;
+          width: 50%;
+          height: 207px;
+          border: 1px solid rgba(100, 100, 100, 1);
+          border-radius: 16px;
+          z-index: 2;
+          background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%);
+          backdrop-filter: blur(30px);
+          margin-left: auto;
+          margin-top: -213px;
+          margin-right: -3px;
+
+          @include media.lg {
+            width: 100%;
+          }
+
+          @include media.xs {
+            height: 310px;
+            margin-left: 0;
+            margin-top: 0;
+            margin-right: 0;
+          }
+
+          .pencilText {
+            display: flex;
+            flex-direction: column;
+            gap: 67px;
+
+            @include media.xs {
+              gap: 10px;
+              text-align: center;
+            }
+
+            h4 {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 22px;
+              line-height: 120%;
+              font-feature-settings: 'pnum' on, 'lnum' on;
+              color: #FAFDFF;
+
+              @include media.xs {
+                font-size: 18px;
+              }
+            }
+
+            p {
+              width: 267px;
+              height: 66px;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22px;
+              font-feature-settings: 'pnum' on, 'lnum' on;
+              color: #FAFDFF;
+              opacity: 0.6;
+
+              @include media.xs {
+                font-size: 14px;
+              }
+            }
+          }
+
+          .pencilIamges {
+            .edit {
+              position: absolute;
+              top: 20px;
+              right: 162px;
+              bottom: 142px;
+
+              @include media.xs {
+                bottom: 105px;
+                top: revert;
+                right: revert;
+              }
+            }
+
+            .instruments {
+              position: absolute;
+              top: 56px;
+              right: 157px;
+              bottom: 114px;
+              z-index: 1;
+
+              @include media.xs {
+                top: revert;
+                right: 121px;
+                bottom: 76px;
+              }
+            }
+
+            .scissors {
+              position: absolute;
+              top: 23px;
+              right: 76px;
+              bottom: 140px;
+
+              @include media.xs {
+                top: revert;
+              }
+            }
+
+            .eraser {
+              position: absolute;
+              top: 130px;
+              right: 21px;
+              bottom: 33px;
+
+              @include media.xs {
+                top: revert;
+                bottom: 15px;
+              }
+            }
+
+            .pencilIcon {
+              position: absolute;
+              top: 134px;
+              right: 179px;
+              bottom: 13px;
+
+              @include media.xs {
+                bottom: 0;
+                top: revert;
+              }
+            }
+
+            .pencilLine {
+              position: absolute;
+              top: 18px;
+              right: 0;
+              bottom: 13px;
+
+              @include media.xs {
+                top: revert;
+                bottom: 16px;
+              }
+            }
+          }
+        }
+
+    .startBlock {
+      width: 100%;
+      border-radius: 16px;
+      height: 279px;
+      background: url("/public/images/mackbook.png") no-repeat center;
+      background-size: cover;
+      background-color: rgba(38, 39, 40, 1);
+      background-position-y: 50px;
+      justify-content: center;
+      align-items: center;
+      display: none;
+
+
+      @include media.lg {
+        display: flex;
+      }
+
+
+      .btnStart {
+        @include mix.button-base;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        color: #1B1C1F;
+        background: #A1D8EE;
+        transition: 0.3s;
+
+
+        &:hover {
+          cursor: pointer;
+          color: vars.$color-light-blue;
+          background: vars.$color-dark-gray-hover;
+        }
+      }
+    }
+    }
+  }
+
+  .mackBook {
+    position: absolute;
+    top: -34px;
+    right: -86px;
+    z-index: 0;
+
+    @include media.lg {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .editorBtn {
+    @include mix.button-base;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #1B1C1F;
+    background: #A1D8EE;
+    transition: 0.3s;
+
+    @include media.lg {
+      display: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: vars.$color-light-blue;
+      background: vars.$color-dark-gray-hover;
+    }
+  }
+
+
+

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="public/images/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Основные мета-теги -->
+  <title><%- title %></title>
+  <meta name="description" content="<%- description %>">
+  <meta name="keywords" content="<%- keywords %>">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="<%- ogTitle %>">
+  <meta property="og:description" content="<%- ogDescription %>">
+  <meta property="og:url" content="<%- ogUrl %>">
+  <meta property="og:site_name" content="<%- ogSiteName %>">
+  <meta property="og:locale" content="<%- ogLocale %>">
+  <meta property="og:type" content="<%- ogType %>">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="<%- twitterCard %>">
+  <meta name="twitter:title" content="<%- twitterTitle %>">
+  <meta name="twitter:description" content="<%- twitterDescription %>">
+</head>
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

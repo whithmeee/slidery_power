@@ -1,0 +1,141 @@
+@use '../../styles/media';
+@use "../../styles/variables" as vars;
+
+.header {
+  position: fixed;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  z-index: 999;
+  display: flex;
+  width: 1160px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  background: vars.$color-light-dark;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, .12);
+  border-radius: 16px;
+
+  @include media.xl {
+    width: 95%;
+  }
+}
+
+.logo {
+  img {
+    object-fit: cover;
+    aspect-ratio: 4 / 1;
+    width: 100%;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: #FAFDFF;
+      display: flex;
+      gap: 5px;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  justify-content: space-between;
+  width: 100%;
+
+  @include media.lg {
+    width: 100%;
+  }
+}
+
+.menuScroll {
+  display: flex;
+  gap: 30px;
+
+  @include media.xl {
+    display: none;
+  }
+}
+
+.itemHeader {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FAFDFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    color: #A1D8EE;
+  }
+}
+
+.headerBtn {
+  display: flex;
+  gap: 12px;
+
+  .btnBlack, .btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    white-space: nowrap;
+    border-radius: 6px;
+    transition: all 0.4s ease-in-out;
+    width: max-content;
+    text-decoration: none;
+    color: #1b1c1f;
+    background: #a1d8ee;
+    padding: 8px 32px;
+
+
+    &:hover {
+      background: #1b1c1f;
+      color: #a1d8ee;
+    }
+  }
+
+  .loginBtn {
+    display: none;
+
+    @include media.md {
+      display: block;
+
+      svg {
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        transition: color .4s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          color: #a1d8ee;
+        }
+      }
+    }
+  }
+
+  @include media.md {
+    .btnBlack {
+      width: 100%;
+      text-align: center;
+    }
+    .btn {
+      width: 100%;
+
+      display: none;
+    }
+  }
+}

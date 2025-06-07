@@ -1,0 +1,39 @@
+@use "styles/reset" as *;
+@use "styles/media" as media;
+@use "styles/variables" as vars;
+@use "styles/mixin" as mix;
+@use "./assets/fonts/font" as *;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: #1B1C1F;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+
+    @include mix.scrollbar;
+}
+
+.container {
+    padding: 0 14px;
+}
+
+.app {
+    min-height: 100dvh;
+    max-width: 1190px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    height: 100%;
+    flex-direction: column;
+    color: #FAFDFF;
+    flex-grow: 1;
+}

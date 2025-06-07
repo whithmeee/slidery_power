@@ -1,0 +1,213 @@
+@use '../../styles/media';
+@use '../../styles/mixin';
+@use "../../styles/variables" as vars;
+
+.footerMain {
+  margin: 0 auto;
+  position: relative;
+  max-width: 1370px;
+  width: 100%;
+  padding-bottom: 40px;
+  padding-top: 80px;
+  flex-shrink: 0;
+
+  @include media.xs {
+    padding-top: 107px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../public/images/blur-footer.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include media.md {
+      background-size: cover;
+    }
+  }
+}
+
+.footerLogo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+
+.footerCnt {
+  border: 1px solid rgba(194, 204, 246, .1215686275);
+  background: #1b1c1f;
+  border-radius: 16px;
+  position: relative;
+  padding: 40px 20px 36px;
+  justify-content: center;
+  display: flex;
+
+  &:before {
+    content: "";
+    background-image: url("../../../public/images/grid-foot.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.footerRel {
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.footerMenu {
+  margin-top: 130px;
+  margin-bottom: 10px;
+
+  @include media.xs {
+    margin-top: 40px;
+  }
+
+  .menuScroll {
+    gap: 30px;
+    align-items: center;
+    display: flex;
+
+    @include media.sm {
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .footerText {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 120%;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+      color: vars.$color-white;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        color: vars.$color-light-blue;
+      }
+    }
+  }
+}
+
+.footerMenu a {
+  color: #FAFDFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.2px;
+  transition: 0.3s;
+}
+
+.btn {
+
+  @include mixin.button-base;
+  color: vars.$color-black;
+  background: vars.$color-light-blue;
+
+  &:hover {
+    background: vars.$color-dark-gray-hover;
+    color: vars.$color-white;
+  }
+}
+
+.footerMenu a:hover, .footerMenu a:active {
+  color: #A1D8EE;
+}
+
+.footerPolitic {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: rgba(250, 253, 255, 0.60);
+  }
+}
+
+
+.footerPolitic a:hover {
+  text-decoration: underline;
+}
+
+.politicOffer {
+  margin-bottom: 10px;
+  gap: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  @include media.xs {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+
+  a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: rgba(250, 253, 255, .6);
+
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.contacts {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: rgba(250, 253, 255, 0.6);
+  margin-bottom: 10px;
+  text-align: center;
+
+  .email {
+    color: #A1D8EE;
+    cursor: pointer;
+    margin-left: 5px;
+    text-decoration: underline;
+  }
+}
+
+.rights {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: rgba(250, 253, 255, 0.6);
+  text-align: center;
+}

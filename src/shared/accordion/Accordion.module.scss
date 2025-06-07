@@ -1,0 +1,130 @@
+@use '../../styles/variables' as vars;
+@use '../../styles/media';
+@use '../../styles/mixin' as mix;
+
+.accordion_content {
+  margin-top: 80px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FAFDFF;
+
+  @include mix.heading-2;
+  @include media.xs {
+    font-size: 24px;
+  }
+}
+.accordion {
+  margin-top: 40px;
+}
+
+.accordionBox {
+  box-shadow: 0px 0px 12px 0px #0000001F;
+  background: #262728;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.accordionClick {
+  transition: 0.3s;
+  padding: 10px 10px 10px 16px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordionClick strong {
+  color: #FAFDFF;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+
+  @include media.xs {
+    font-size: 16px;
+  }
+}
+
+.accordionArrow {
+  box-shadow: 0px 0px 12px 0px #0000001F;
+  background: #2E2D2F;
+  max-width: 40px;
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordionArrow:before {
+  content: url("/public/images/Icon-arrow.svg");
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+  color: vars.$color-black;
+}
+
+.accordionArrow:hover {
+  background: vars.$color-light-blue;
+}
+
+.accordionArrow:hover:before {
+  filter: brightness(0) invert(0);
+}
+
+.accordionBox.open .accordionArrow {
+  background: #A1D8EE;
+}
+
+.accordionBox.open .accordionArrow:before {
+  transform: rotate(180deg);
+  filter: invert(1);
+}
+
+.submenu {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+}
+
+.submenuContent {
+  padding: 0 10px 10px 16px;
+}
+
+.submenu.open {
+  transition: height 0.3s ease-in;
+}
+
+.submenu p {
+  font-size: 16px;
+  line-height: 22px;
+  color: vars.$color-white-60;
+
+  @include media.xs {
+    font-size: 14px;
+  }
+}
+
+.submenu ul {
+  gap: 5px;
+}
+
+.submenu ul li {
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(250, 253, 255, 0.60);
+}

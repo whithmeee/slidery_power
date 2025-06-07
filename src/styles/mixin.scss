@@ -1,0 +1,66 @@
+
+@use "./variables" as vars;
+@mixin heading-1 {
+  font-weight: vars.$font-weight-bold;
+  font-size: 48px;
+  line-height: 52.8px;
+  text-align: center;
+  color: vars.$color-white;
+}
+
+@mixin heading-2 {
+  font-weight: vars.$font-weight-bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: vars.$color-white;
+}
+
+@mixin heading-3 {
+  font-weight: vars.$font-weight-bold;
+  font-size: 22px;
+  line-height: 26.4px;
+  color: vars.$color-white;
+}
+
+@mixin paragraph {
+  font-weight: vars.$font-weight-normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+  color: vars.$color-white-60;
+}
+
+@mixin button-base {
+  font-weight: vars.$font-weight-bold;
+  font-size: 16px;
+  line-height: 22px;
+  white-space: nowrap;
+  border-radius: 6px;
+  padding: 8px 32px;
+  transition: 0.3s;
+  width: max-content;
+}
+
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 3px;
+    height: 30px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    cursor: pointer;
+
+  }
+}
+

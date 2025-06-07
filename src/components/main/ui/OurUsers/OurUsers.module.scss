@@ -1,0 +1,116 @@
+@use "../../../../styles/media" as media;
+@use "../../../../styles/variables" as vars;
+@use "../../../../styles/mixin" as mix;
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ourUsersMain {
+  margin-top: 160px;
+
+  @include media.xs {
+    margin-top: 80px;
+  }
+}
+
+
+.titleUser {
+  @include mix.heading-2;
+  padding-bottom: 30px;
+
+  @include media.xs {
+    font-size: 24px;
+    padding-bottom: 0;
+  }
+}
+
+.ourUsersCnt {
+  gap: 10px;
+  align-items: flex-start;
+  display: flex;
+}
+
+.ourUsersName {
+  strong {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  small {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 4px;
+    text-align: left;
+    opacity: .6;
+  }
+}
+
+.ourUsersFlex {
+  gap: 10px;
+  margin-top: 40px;
+  display: flex;
+}
+
+.ourUsersStats {
+  max-width: 386px;
+  width: 100%;
+  box-shadow: 0px 0px 16px 0px #00000029;
+  border: 1px solid #C2CCF61F;
+  border-radius: 20px;
+  background: #262728;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+
+
+  img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+  }
+
+  @include media.xl {
+    display: none;
+  }
+}
+
+.ourUsersRel {
+  max-width: 764px;
+  width: 100%;
+  position: relative;
+}
+
+
+.our-users-rel:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 190px;
+  background-image: url("/public/images/blur-bottom.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+
+
+.ourUsersInfo {
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+    color: vars.$color-white-60;
+  }
+}
+
+.ourUsersStats .ourUsersInfo {
+  padding: 20px 20px 40px;
+}
+
