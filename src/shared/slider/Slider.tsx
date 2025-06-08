@@ -25,11 +25,22 @@ const Slider = () => {
                     }}
                     mousewheel={true}
                     modules={[Pagination, Autoplay, Mousewheel]}
+                    pagination={{
+                        el: `.${styles.paginationContainer}`,
+                        type: 'bullets',
+                        bulletClass: styles.bullet,
+                        bulletActiveClass: styles.bulletActive,
+                        clickable: true,
+                        dynamicBullets: false,
+                    }}
                     breakpoints={{
                         992: {
                             direction: "vertical",
                             slidesPerView: 3,
-                            spaceBetween: 10
+                            spaceBetween: 10,
+                            pagination: {
+                                enabled: false
+                            }
                         }
                     }}
                 >
@@ -55,7 +66,7 @@ const Slider = () => {
                 </Swiper>
             </div>
         </div>
-        <div className="our-users-pagination swiper-pagination"></div>
+        <div className={styles.paginationContainer}></div>
     </div>;
 
 };

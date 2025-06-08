@@ -111,6 +111,7 @@
           top: 0;
           left: 0;
           height: 310px;
+          backdrop-filter: revert;
         }
         .editorText {
           display: flex;
@@ -227,6 +228,7 @@
 
         @include media.xs {
           height: 310px;
+          backdrop-filter: revert;
         }
 
         .editorTextTemplate {
@@ -345,6 +347,7 @@
 
           @include media.xs{
             height: 310px;
+            backdrop-filter: revert;
           }
 
 
@@ -462,6 +465,7 @@
             margin-left: 0;
             margin-top: 0;
             margin-right: 0;
+            backdrop-filter: revert;
           }
 
           .pencilText {

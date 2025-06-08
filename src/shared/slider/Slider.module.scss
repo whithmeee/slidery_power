@@ -118,3 +118,35 @@
   line-height: 20px;
   text-align: center;
 }
+
+
+.paginationContainer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 10;
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+
+  .bullet {
+    width: 10px;
+    position: relative;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+  }
+
+  .bulletActive {
+    background-color: rgba(161, 216, 238, 1);
+  }
+}
+

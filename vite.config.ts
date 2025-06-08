@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { createHtmlPlugin } from 'vite-plugin-html'
+import viteImagemin from 'vite-plugin-imagemin';
 
 export default defineConfig({
   plugins: [
@@ -27,6 +28,21 @@ export default defineConfig({
           twitterDescription: "Slidery.AI создаёт презентации за вас. Введите тему и получите готовые слайды. Всё онлайн, без регистрации и бесплатно. Работает на русском языке."
         }
       }
-    })
+    }),
+    viteImagemin({
+      gifsicle: { optimizationLevel: 7 },
+      mozjpeg: { quality: 75 },
+      pngquant: {
+        quality: [0.8, 0.9],
+        speed: 4,
+      },
+      optipng: { optimizationLevel: 7 },
+      svgo: {
+        plugins: [
+          { name: 'removeViewBox' },
+          { name: 'removeEmptyAttrs', active: false }
+        ],
+      },
+    }),
   ],
 })

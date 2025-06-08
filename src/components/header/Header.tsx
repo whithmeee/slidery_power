@@ -22,6 +22,7 @@ const Header = () => {
             <div className={styles.logo}>
                 <Link to="/">
                     <img width={124} height={40} loading="eager" src="/images/Logo.svg" alt="Logo" />
+                    <p className={styles.header_number}><span>🇷🇺 </span>№ 1 в России </p>
                 </Link>
             </div>
             <ul className={styles.menuScroll}>
